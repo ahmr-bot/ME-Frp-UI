@@ -12,7 +12,7 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton>
+    <ListItemButton href="/panel/home">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
@@ -24,45 +24,39 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="订单" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton href="/panel/vwo50">
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
       <ListItemText primary="赞助列表" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton href="/panel/Download">
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="下载列表" />
     </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="实名认证" />
-    </ListItemButton>
-  </React.Fragment>
+    </React.Fragment>
 );
 
 export const secondaryListItems = (
   <React.Fragment>
     <ListSubheader component="div" inset>
-      Saved reports
+      映射选项
     </ListSubheader>
-    <ListItemButton>
+    <ListItemButton href="/panel/CreateTunnel">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="创建隧道" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton href="/panel/TunnelList">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="隧道列表" />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton href="/panel/conf">
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>
