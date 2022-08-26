@@ -27,7 +27,7 @@ function getStepContent(step: number) {
     case 2:
       return <Review />;
     default:
-      throw new Error('Unknown step');
+      throw new Error('未知步奏');
   }
 }
 
