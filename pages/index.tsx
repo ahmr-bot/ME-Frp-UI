@@ -129,7 +129,7 @@ const Home: NextPage = () => {
         }}
       >
             <Box maxWidth="sm">
-          <Button variant="contained" component={Link} noLinkStyle href="/panel/SignIn">
+          <Button variant="contained" component={Link} noLinkStyle href="/auth/SignIn">
             开始使用
           </Button>
         </Box>
