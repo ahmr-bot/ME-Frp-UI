@@ -28,7 +28,7 @@ export const mainListItems = (
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary="赞助列表" />
+      <ListItemText primary="赞助我们" />
     </ListItemButton>
     <ListItemButton href="/panel/Download">
       <ListItemIcon>

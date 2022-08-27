@@ -72,8 +72,7 @@ const Home: NextPage = () => {
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
             ME Frp 内网穿透（一起映射）
           </Typography>
-          <nav>
-            <Link
+              <Link
               variant="button"
               color="text.primary"
               href="#"
@@ -97,7 +96,6 @@ const Home: NextPage = () => {
             >
               登陆
             </Link>
-          </nav>
           <Button href="/auth/SignUp" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
             注册
           </Button>
@@ -129,7 +127,7 @@ const Home: NextPage = () => {
         }}
       >
             <Box maxWidth="sm">
-          <Button variant="contained" component={Link} noLinkStyle href="/panel/SignIn">
+          <Button variant="contained" component={Link} noLinkStyle href="/auth/SignIn">
             开始使用
           </Button>
         </Box>

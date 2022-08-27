@@ -12,12 +12,15 @@ import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from '../../src/DrawerList';
-import Create from './Createtunnel/Create';
+import About from './vwo50/About';
 import Copyright from '../../src/Copyright';
+import VWO50 from './vwo50/VWO50';
 
 
 const drawerWidth: number = 240;
@@ -72,7 +75,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 const mdTheme = createTheme();
 
-const createtunnel: NextPage = () => {
+const home: NextPage = () => {
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -151,19 +154,26 @@ const createtunnel: NextPage = () => {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
-            
-              {/* 创建隧道 */}
-              <Grid item xs={12} md={8} lg={9}>
-                <Create />
-              
+                          {/* 引入赞助方式 */}
+                          <Grid item xs={12}>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                  <About />
+                </Paper>
+              </Grid>
+
+              {/* 引入赞助列表 */}
+              <Grid item xs={12}>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                  <VWO50 />
+                </Paper>
               </Grid>
             </Grid>
+            <Copyright sx={{ pt: 4 }} />
           </Container>
-          <Copyright sx={{ mt: 5 }} />
         </Box>
       </Box>
     </ThemeProvider>
   );
 }
 
-export default createtunnel
+export default home
