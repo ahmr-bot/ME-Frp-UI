@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-with-typescript",
+  "name": "ME-Frp-UI",
   "version": "5.0.0",
   "private": true,
   "scripts": {
@@ -16,7 +16,9 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
+    "markdown-to-jsx": "^7.1.7",
     "next": "latest",
+    "prettify": "^0.1.7",
     "react": "latest",
     "react-dom": "latest",
     "recharts": "^2.1.13",
