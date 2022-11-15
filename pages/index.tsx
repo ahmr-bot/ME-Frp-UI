@@ -15,6 +15,7 @@ import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 import Copyright from '../src/Copyright';
+import Head from 'next/head'
 const tiers = [
   {
     title: 'Free',
@@ -37,6 +38,10 @@ export default function Home() {
      <React.Fragment>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
+      <Head>
+        <title>MirrorEdge Frp [ME Frp] 镜缘映射</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <AppBar
         position="static"
         color="default"
