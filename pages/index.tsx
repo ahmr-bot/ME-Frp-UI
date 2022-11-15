@@ -15,6 +15,7 @@ import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 import Copyright from '../src/Copyright';
+import Head from 'next/head'
 const tiers = [
   {
     title: 'Free',
