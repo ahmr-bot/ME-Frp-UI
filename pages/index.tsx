@@ -17,19 +17,6 @@ import Container from '@mui/material/Container';
 import Copyright from '../src/Copyright';
 const tiers = [
   {
-    title: '流量 ',
-    price: '定价中/GB',
-    link: 'https://mefrp.com',
-    description: [
-      '当默认流量 签到流量用尽之后 如果有积分则自动使用积分抵扣',
-      '1积分=x元',
-      '',
-      '',
-    ],
-    buttonText: '现在开始',
-    buttonVariant: 'outlined',
-  },
-  {
     title: 'Free',
     subheader: '',
     price: '0',
@@ -37,27 +24,15 @@ const tiers = [
       '无限隧道数',
       '无限带宽',
       '20+节点',
-      '每日5GB默认流量（每天自动清空，签到获得的流量不受影响）',
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
-  },
-  {
-    title: '无限流量',
-    price: '定价中…',
-    description: [
-      'Free用户的所有内容',
-      '无限的流量',
-      '',
-      '',
-    ],
-    buttonText: '购买',
-    buttonVariant: 'outlined',
-  },
-];
+    link: 'https://dash.laecloud.com',
+  }
+]; 
 
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
      <React.Fragment>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
@@ -70,7 +45,7 @@ const Home: NextPage = () => {
       >
         <Toolbar sx={{ flexWrap: 'wrap' }}> 
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            ME Frp 内网穿透（一起映射）
+            MirrorEdge Frp [ME Frp] 镜缘映射
           </Typography>
               <Link
               variant="button"
@@ -83,7 +58,7 @@ const Home: NextPage = () => {
             <Link
               variant="button"
               color="text.primary"
-              href="/panel/home"
+              href="https://dash.laecloud.com"
               sx={{ my: 1, mx: 1.5 }}
             >
               控制面板
@@ -91,12 +66,12 @@ const Home: NextPage = () => {
             <Link
               variant="button"
               color="text.primary"
-              href="/auth/SignIn"
+              href="https://forum.laecloud.com"
               sx={{ my: 1, mx: 1.5 }}
             >
-              登陆
+              论坛
             </Link>
-          <Button href="/auth/SignUp" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+          <Button href="https://www.lae.email" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
             注册
           </Button>
         </Toolbar>
@@ -110,11 +85,11 @@ const Home: NextPage = () => {
           color="text.primary"
           gutterBottom
         >
-          ME Frp 内网穿透（一起映射）
+          MirrorEdge Frp [ME Frp] 镜缘映射
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" component="p">
           为什么选择我们？
-          这是一个不限带宽 不限隧道数量 快速 稳定的端口映射服务
+          这是一个免费 不限带宽 不限隧道数量 快速 稳定的端口映射服务
           使用开源项目 Frp  ， 简单易用
         </Typography>
               <Box
@@ -127,34 +102,9 @@ const Home: NextPage = () => {
         }}
       >
             <Box maxWidth="sm">
-          <Button variant="contained" component={Link} noLinkStyle href="/auth/SignIn">
+          <Button variant="contained" href="https://dash.laecloud.com">
             开始使用
           </Button>
-        </Box>
-                      <Box
-        sx={{
-          my: 4,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-      <Typography variant="users" gutterBottom>总注册用户数:
-      
-      </Typography>
-      <Typography variant="rowusers" gutterBottom>
-         </Typography>
-               <Typography variant="nodes" gutterBottom>总节点数
-      
-      </Typography>
-      <Typography variant="rownode" gutterBottom>
-         </Typography>
-               <Typography variant="gbs" gutterBottom>今日总流量
-      
-      </Typography>
-      <Typography variant="rowgbs" gutterBottom>
-         </Typography>
         </Box>
         </Box>
       </Container>
@@ -237,11 +187,9 @@ const Home: NextPage = () => {
           py: [3, 6],
         }}
       >
-        <Copyright sx={{ mt: 5 }} />
+        <Copyright />
       </Container>
       {/* End footer */}
           </React.Fragment>
   );
 }
-
-export default Home
