@@ -37,6 +37,10 @@ export default function Home() {
      <React.Fragment>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
+          <Head>
+        <title>MirrorEdge Frp [ME Frp] 镜缘映射</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <AppBar
         position="static"
         color="default"
