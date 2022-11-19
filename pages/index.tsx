@@ -18,17 +18,51 @@ import Copyright from '../src/Copyright';
 import Head from 'next/head'
 const tiers = [
   {
-    title: 'Free',
+    title: 'Pro',
+    titles: '免费计划',
     subheader: '',
-    price: '0',
+    price: '0 Drops',
     description: [
       '无限隧道数',
       '无限带宽',
-      '20+节点',
+      '大量免费节点',
+      '注：为防止滥用，我们会收取 1 Drops/GB (￥1=1000 Drops)的费用,因此需要您为账户预存款 1 元',
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
     link: 'https://dash.laecloud.com',
+  },
+  {
+    title: '流量',
+    titles: '流量计划',
+    subheader: '',
+    price: '200 Drops',
+    description: [
+      '无限隧道数',
+      '无限带宽',
+      '按量计费,即用即付',
+      '全部节点',
+      '￥1=1000 Drops',
+    ],
+    buttonText: '现在开始使用吧',
+    buttonVariant: 'contained',
+    link: 'https://dash.laecloud.com',
+  },
+  {
+    title: '免费计划',
+    titles: '扶持计划',
+    subheader: '',
+    price: '0 Drops',
+    description: [
+      '无限隧道数',
+      '无限带宽',
+      '每月按需向指定隧道发放免费流量',
+      '全部节点',
+      '超量后付费节点按流量计划计费',
+    ],
+    buttonText: '去申请',
+    buttonVariant: 'contained',
+    link: 'https://forum.laecloud.com/d/15-gong-yi-ge-ren-xiang-mu-mian-fei-liu-liang-shen-qing',
   }
 ]; 
 
@@ -39,8 +73,10 @@ export default function Home() {
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <Head>
+        
         <title>MirrorEdge Frp [ME Frp] 镜缘映射</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="keywords" content="控制面板,Frp,我的世界开服,内网穿透,端口映射,免费frp,镜缘映射,MEFrp"></meta>
       </Head>
       <AppBar
         position="static"
@@ -126,7 +162,7 @@ export default function Home() {
             >
               <Card>
                 <CardHeader
-                  title={tier.title}
+                  title={tier.titles}
                   subheader={tier.subheader}
                   titleTypographyProps={{ align: 'center' }}
                   action={tier.title === 'Pro' ? <StarIcon /> : null}
@@ -152,8 +188,7 @@ export default function Home() {
                     <Typography component="h2" variant="h3" color="text.primary">
                       ${tier.price}
                     </Typography>
-                    <Typography variant="h6" color="text.secondary">
-                      /mo
+                    <Typography variant="h6" color="text.secondary">/GB
                     </Typography>
                   </Box>
                   <ul>
