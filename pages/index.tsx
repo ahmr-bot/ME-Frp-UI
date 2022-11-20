@@ -51,7 +51,7 @@ const tiers = [
     title: '免费计划',
     titles: '扶持计划',
     subheader: '',
-    price: '0 Drops',
+    price: '0',
     description: [
       '无限隧道数',
       '无限带宽',
