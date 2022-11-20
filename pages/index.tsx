@@ -21,12 +21,12 @@ const tiers = [
     title: 'Pro',
     titles: '免费计划',
     subheader: '',
-    price: '0 Drops',
+    price: '0',
     description: [
       '无限隧道数',
       '无限带宽',
       '大量免费节点',
-      '注：为防止滥用，我们会收取 1 Drops/GB (￥1=1000 Drops)的费用,因此需要您为账户预存款 1 元',
+      '注：为防止滥用，我们会收取 ￥0.001/GB的费用,因此需要您为账户预存款 1 元',
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
@@ -36,13 +36,12 @@ const tiers = [
     title: '流量',
     titles: '流量计划',
     subheader: '',
-    price: '200 Drops',
+    price: '0.2',
     description: [
       '无限隧道数',
       '无限带宽',
       '按量计费,即用即付',
       '全部节点',
-      '￥1=1000 Drops',
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
@@ -185,7 +184,7 @@ export default function Home() {
                     }}
                   >
                     <Typography component="h2" variant="h3" color="text.primary">
-                      {tier.price}
+                      ￥{tier.price}
                     </Typography>
                     <Typography variant="h6" color="text.secondary">/GB
                     </Typography>
