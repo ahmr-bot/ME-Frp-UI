@@ -30,7 +30,7 @@ const tiers = [
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
-    link: 'https://dash.laecloud.com',
+    link: 'https://panel.mefrp.com',
   },
   {
     title: '流量',
@@ -45,7 +45,7 @@ const tiers = [
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
-    link: 'https://dash.laecloud.com',
+    link: 'https://panel.mefrp.com',
   },
   {
     title: '免费计划',
@@ -97,7 +97,7 @@ export default function Home() {
             <Link
               variant="button"
               color="text.primary"
-              href="https://dash.laecloud.com"
+              href="https://panel.mefrp.com"
               sx={{ my: 1, mx: 1.5 }}
             >
               控制面板
@@ -110,7 +110,7 @@ export default function Home() {
             >
               论坛
             </Link>
-          <Button href="https://www.lae.email" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+          <Button href="https://oauth.laecloud.com" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
             注册
           </Button>
         </Toolbar>
@@ -141,7 +141,7 @@ export default function Home() {
         }}
       >
             <Box maxWidth="sm">
-          <Button variant="contained" href="https://dash.laecloud.com">
+          <Button variant="contained" href="https://panel.mefrp.com">
             开始使用
           </Button>
         </Box>
