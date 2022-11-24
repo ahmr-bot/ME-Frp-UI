@@ -20,7 +20,7 @@ export default function Copyright() {
       {new Date().getFullYear()}.
     <br />
     <MuiLink color="inherit" href="https://cfu.mefrp.com/">
-    Frp内网穿透联盟统一识别编码:AZWB66WB
+    Frp 内网穿透联盟统一识别编码:AZWB66WB
       </MuiLink>
     </Typography>
   );
