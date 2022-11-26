@@ -25,43 +25,12 @@ const tiers = [
     description: [
       '无限隧道数',
       '无限带宽',
-      '大量免费节点',
-      '注：为防止滥用，我们会收取 ￥0.001/GB的费用,因此需要您为账户预存款 1 元',
+      '无限流量',
+      '注：由于出现使用不正当手段批量创建隧道的现象，故为防止滥用，因此需要您为账户预存款 1 元',
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
     link: 'https://panel.mefrp.com',
-  },
-  {
-    title: '流量',
-    titles: '流量计划',
-    subheader: '',
-    price: '0.2',
-    description: [
-      '无限隧道数',
-      '无限带宽',
-      '按量计费,即用即付',
-      '全部节点',
-    ],
-    buttonText: '现在开始使用吧',
-    buttonVariant: 'contained',
-    link: 'https://panel.mefrp.com',
-  },
-  {
-    title: '免费计划',
-    titles: '扶持计划',
-    subheader: '',
-    price: '0',
-    description: [
-      '无限隧道数',
-      '无限带宽',
-      '每月按需向指定隧道发放免费流量',
-      '全部节点',
-      '超量后付费节点按流量计划计费',
-    ],
-    buttonText: '去申请',
-    buttonVariant: 'contained',
-    link: 'https://forum.laecloud.com/d/15-gong-yi-ge-ren-xiang-mu-mian-fei-liu-liang-shen-qing',
   }
 ]; 
 
@@ -97,7 +66,7 @@ export default function Home() {
             <Link
               variant="button"
               color="text.primary"
-              href="https://panel.mefrp.com"
+              href="https://panel.mefrp.com/login"
               sx={{ my: 1, mx: 1.5 }}
             >
               控制面板
@@ -127,8 +96,8 @@ export default function Home() {
           MirrorEdge Frp [ME Frp] 镜缘映射
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" component="p">
-          为什么选择我们？
-          这是一个免费 不限带宽 不限隧道数量 快速 稳定的端口映射服务
+          为什么选择我们？<br />
+          这是一个 <strong>完全免费 不限带宽 不限隧道数量 不限流量 </strong> 快速 稳定的端口映射服务
           使用开源项目 Frp  ， 简单易用
         </Typography>
               <Box
@@ -141,7 +110,7 @@ export default function Home() {
         }}
       >
             <Box maxWidth="sm">
-          <Button variant="contained" href="https://panel.mefrp.com">
+          <Button variant="contained" href="https://panel.mefrp.com/login">
             开始使用
           </Button>
         </Box>
