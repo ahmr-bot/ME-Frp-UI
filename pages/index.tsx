@@ -26,11 +26,11 @@ const tiers = [
       '无限隧道数',
       '无限带宽',
       '无限流量',
-      '注：由于出现使用不正当手段批量创建隧道的现象，故为防止滥用，因此需要您为账户预存款 1 元',
+      '完全不需要任何一分钱！！！',
     ],
     buttonText: '现在开始使用吧',
     buttonVariant: 'contained',
-    link: 'https://panel.mefrp.com',
+    link: 'https://panel.mefrp.com/login',
   }
 ]; 
 
