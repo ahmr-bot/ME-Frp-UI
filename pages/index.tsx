@@ -23,9 +23,10 @@ const tiers = [
     subheader: '',
     price: '0',
     description: [
-      '无限隧道数',
+      '三条隧道',
       '无限带宽',
       '无限流量',
+      '众生平等',
       '完全不需要任何一分钱！！！',
     ],
     buttonText: '现在开始使用吧',
@@ -97,7 +98,7 @@ export default function Home() {
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" component="p">
           为什么选择我们？<br />
-          这是一个 <strong>完全免费 不限带宽 不限隧道数量 不限流量 </strong> 快速 稳定的端口映射服务
+          这是一个 <strong>完全免费 不限带宽 不限流量 </strong> 快速 稳定的端口映射服务
           使用开源项目 Frp  ， 简单易用
         </Typography>
               <Box
