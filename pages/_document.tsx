@@ -1,3 +1,11 @@
+/*
+ * @Author: ahmr-bot ahmrcxy@gmail.com
+ * @Date: 2022-11-15 19:57:32
+ * @LastEditors: ahmr-bot ahmrcxy@gmail.com
+ * @LastEditTime: 2022-12-01 00:04:07
+ * @FilePath: \ME-Frp-UI\pages\_document.tsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import * as React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
@@ -16,6 +24,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+          <link rel="stylesheet" href="./style.css" />
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
         </Head>
