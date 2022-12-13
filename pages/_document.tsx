@@ -2,7 +2,7 @@
  * @Author: ahmr-bot ahmrcxy@gmail.com
  * @Date: 2022-11-15 19:57:32
  * @LastEditors: ahmr-bot ahmrcxy@gmail.com
- * @LastEditTime: 2022-12-07 19:41:11
+ * @LastEditTime: 2022-12-13 09:29:31
  * @FilePath: \ME-Frp-UI\pages\_document.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -27,6 +27,7 @@ export default class MyDocument extends Document {
           <title>MirrorEdge Frp [ME Frp] 镜缘映射</title>
 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 <meta name="keywords" content="控制面板,Frp,我的世界开服,内网穿透,端口映射,免费frp,镜缘映射,MEFrp"></meta>
+<meta name="baidu-site-verification" content="code-p4B7Qt44TU" />
           <meta name="emotion-insertion-point" content="" />
           {(this.props as any).emotionStyleTags}
         </Head>
