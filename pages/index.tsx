@@ -59,7 +59,7 @@ export default function Home() {
               <Link
               variant="button"
               color="text.primary"
-              href="#"
+              href="https://jq.qq.com/?_wv=1027&k=bH86wYBz"
               sx={{ my: 1, mx: 1.5 }}
             >
               加入 QQ 群
